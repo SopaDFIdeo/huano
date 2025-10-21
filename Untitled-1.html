@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Planta del Guano — Presentación</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f7425;
+      --accent:#043a1c;
+      --green:#23246d;
+      --card:#ffffff;
+      --muted:#000000;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family: 'Montserrat', sans-serif;
+      margin:0; background:linear-gradient(180deg,var(--bg),#fff); color:#111;
+    }
+    header{
+      background: radial-gradient(circle at 10% 10%, rgba(59,122,87,0.1), transparent 10%),
+                  linear-gradient(90deg, rgba(59,122,87,0.06), rgba(38,92,59,0.03));
+      padding:48px 24px;
+      display:flex; flex-direction:column; align-items:center; text-align:center;
+    }
+    .hero{
+      max-width:1100px; width:100%; display:grid; grid-template-columns: 1fr 380px; gap:28px; align-items:center;
+    }
+    h1{font-family:'Playfair Display', serif; font-size:2.6rem; margin:0; color:var(--green)}
+    p.lead{margin:10px 0 0; color:var(--muted); font-size:1.05rem}
+    .plant-figure{background:linear-gradient(135deg,#fff 0,#fff0 40%); border-radius:18px; padding:18px; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 20px rgba(0,0,0,0.08)}
+    .plant-figure img{width:100%; max-width:320px; height:auto; border-radius:12px}
+
+    main{max-width:1100px; margin:28px auto; padding:0 18px 80px}
+    .grid{display:grid; grid-template-columns:repeat(2,1fr); gap:20px}
+    section.card{background:var(--card); padding:20px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.04);}
+    h2{margin:0 0 10px; color:var(--accent)}
+    ul{margin:0; padding-left:18px; color:var(--muted)}
+
+    .badge{display:inline-block; padding:8px 12px; border-radius:999px; font-weight:600; font-size:0.85rem; color:white; background:var(--accent)}
+
+    .fullwidth{grid-column:1 / -1}
+
+    .facts{display:flex; gap:12px; flex-wrap:wrap}
+    .fact{flex:1 1 140px; background:#f8fff8; padding:10px; border-radius:10px; text-align:center}
+    .fact strong{display:block; font-size:1.05rem; color:var(--green)}
+    footer{max-width:1100px; margin:40px auto 80px; padding:0 18px; text-align:center; color:var(--muted)}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <div>
+        <span class="badge">Botánica · Inga edulis</span>
+        <h1>Planta del Guano</h1>
+        <p class="lead">Una presentación informativa sobre la planta del Guano, su origen, características y usos en la naturaleza y la vida cotidiana.</p>
+      </div>
+      <figure class="plant-figure" aria-hidden="true">
+        <img src="guano.png" alt="Planta del guan"/>
+      </figure>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid">
+      <section class="card">
+        <h2>Descripción general</h2>
+        <p style="color:var(--muted)"><strong>El Guano</strong> (Inga edulis) es un árbol perteneciente a la familia de las leguminosas (Fabaceae), conocido también como <em>guamo</em>, <em>ice-cream bean</em> o <em>guaba</em>. Es nativo de regiones tropicales de América del Sur y es apreciado tanto por su fruto dulce como por su capacidad de mejorar los suelos gracias a la fijación de nitrógeno.</p>
+      </section>
+
+      <section class="card">
+        <h2>Características principales</h2>
+        <ul>
+          <li><strong>Tamaño:</strong> puede alcanzar de 10 a 25 metros de altura.</li>
+          <li><strong>Hojas:</strong> compuestas, de color verde brillante y con foliolos ovalados.</li>
+          <li><strong>Flores:</strong> blancas o amarillentas, dispuestas en racimos, con aroma dulce.</li>
+          <li><strong>Fruto:</strong> una vaina alargada (hasta 1 m) con pulpa blanca, esponjosa y dulce que recubre las semillas.</li>
+          <li><strong>Ciclo de vida:</strong> perenne, de rápido crecimiento en climas cálidos y húmedos.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Origen y distribución</h2>
+        <p style="color:var(--muted)">Originario de la cuenca amazónica, el guan se encuentra ampliamente distribuido en América Central y del Sur, incluyendo países como Brasil, Perú, Colombia, Ecuador y México. Se adapta bien a zonas tropicales de baja altitud.</p>
+      </section>
+
+      <section class="card">
+        <h2>Usos y beneficios</h2>
+        <ul>
+          <li>La pulpa del fruto es comestible, dulce y refrescante.</li>
+          <li>El árbol proporciona sombra y se utiliza como barrera contra el viento en cultivos.</li>
+          <li>Sus raíces fijan nitrógeno, mejorando la fertilidad del suelo.</li>
+          <li>La madera ligera se emplea en construcción rústica y para leña.</li>
+          <li>Sirve como planta ornamental y para reforestación.</li>
+        </ul>
+      </section>
+
+      <section class="card fullwidth">
+        <h2>Detalles ecológicos</h2>
+        <p style="color:var(--muted)">El guano juega un papel importante en los ecosistemas tropicales, brindando hábitat y alimento a aves, insectos y mamíferos. Gracias a su rápido crecimiento y a su capacidad de enriquecer el suelo, es una especie clave en programas de restauración ecológica.</p>
+        <div class="facts">
+          <div class="fact"><small>Altura promedio</small><strong>10–25 m</strong></div>
+          <div class="fact"><small>Clima</small><strong>Tropical húmedo</strong></div>
+          <div class="fact"><small>Nombre científico</small><strong>Inga edulis</strong></div>
+          <div class="fact"><small>Familia</small><strong>Fabaceae</strong></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Cuidados del cultivo</h2>
+        <ul>
+          <li><strong>Suelo:</strong> fértil y bien drenado.</li>
+          <li><strong>Riego:</strong> frecuente en etapa de crecimiento, moderado en madurez.</li>
+          <li><strong>Exposición:</strong> pleno sol o semisombra.</li>
+          <li><strong>Temperatura:</strong> óptima entre 22 y 30 °C.</li>
+          <li><strong>Reproducción:</strong> por semillas frescas o esquejes.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Importancia cultural</h2>
+        <p style="color:var(--muted)">En diversas comunidades rurales y amazónicas, el guan es considerado un árbol de gran valor ecológico y social. Sus frutos suelen compartirse en familia y representan una fuente de alimento natural, sostenible y deliciosa.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Creado para fines educativos y de presentación • Planta del guano (<em>Inga edulis</em>)</p>
+  </footer>
+</body>
+</html>
